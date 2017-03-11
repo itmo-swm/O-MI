@@ -9,4 +9,4 @@ services:
     tty: true
     volumes:
      - ./application.conf:/conf/application.conf:ro
-
+     - ./logs:/usr/share/o-mi-node/logs
