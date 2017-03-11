@@ -1,0 +1,12 @@
+version: '2'
+services:
+  omi:
+    restart: always
+    build: .
+    ports:
+     - "8280:8080"
+     - "8180:8180"
+    tty: true
+    volumes:
+     - ./application.conf:/conf/application.conf:ro
+
